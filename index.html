@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;800&family=Oxygen:wght@300;400&display=swap" rel="stylesheet">
+    <title>Indira Hotel Boutique</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">INDIRA</h1>
+        <h3>H O T E L ٠ B O U T I Q U E</h3>
+        <h2>Encuesta de satisfacción</h2>
+        <p id="description">
+          Estimado cliente:<br>
+          Nos complace haberlo recibido en Indira Hotel
+          Boutique. Su opinión es importante para nuestros objetivos de calidad
+          y experiencia de nuestros huéspedes. Agradecemos el tiempo destinado
+          para ayudarnos a brindar un servicio de excelencia.
+        </p>
+      </header>
+      <main>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Nombre *</label>
+            <input
+              class="form-control"
+              id="name"
+              type="text"
+              placeholder="Ingrese su nombre. Por ejemplo: Ana María"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label id="email-label" for="email">Correo electrónico *</label>
+            <input
+              class="form-control"
+              id="email"
+              type="email"
+              placeholder="Ingrese su correo electrónico. Por ejemplo: anamaria@correo.com"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label id="number-label" for="number">Edad
+              <span class="clue">(opcional)</span>
+            </label>
+            <input
+              class="form-control"
+              id="number"
+              type="number"
+              min="10"
+              max="99"
+              placeholder="Ingrese su edad. Por ejemplo: 35"
+            />
+          </div>
+
+          <div class="form-group">
+            <p>¿Cómo conoció nuestro hotel?</p>
+            <select class="form-control" name="" id="dropdown">
+              <option disabled selected value>Seleccione una opción</option>
+              <option value="redes-sociales">Redes sociales</option>
+              <option value="portales-turismo">Portales de turismo</option>
+              <option value="recomendacion">Recomendación</option>
+              <option value="hoteles-google">Listado de hoteles en Google</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <p>Valoración de nuestros servicios</p>
+            <div class="row">
+                <div class="servicio"></div>
+                <div class="mejorable">
+                  <label class="form-label">Mejorable</label>
+                </div>
+                <div class="satisfactorio">
+                  <label class="form-label">Satisfactorio</label>
+                </div>
+                <div class="excelente">
+                  <label class="form-label">Excelente</label>
+                </div>
+            </div>
+            <div class="row">
+              <div class="servicio">
+                <label class="form-label">Atención</label>
+              </div>
+              <div class="mejorable">
+                <input name="valor-atencion" type="radio" value="mejorable" class="form-input" />
+              </div>
+              <div class="satisfactorio">
+                <input name="valor-atencion" type="radio" value="satisfactorio" class="form-input" />
+              </div>
+              <div class="excelente">
+                <input name="valor-atencion" type="radio" value="excelente" class="form-input" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="servicio">
+                <label class="form-label">Limpieza</label>
+              </div>
+              <div class="mejorable">
+                <input name="valor-limpieza" type="radio" value="mejorable" class="form-input" />
+              </div>
+              <div class="satisfactorio">
+                <input name="valor-limpieza" type="radio" value="satisfactorio" class="form-input" />
+              </div>
+              <div class="excelente">
+                <input name="valor-limpieza" type="radio" value="excelente" class="form-input" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="servicio">
+                <label class="form-label">Comodidad</label>
+              </div>
+              <div class="mejorable">
+                <input name="valor-comodidad" type="radio" value="mejorable" class="form-input" />
+              </div>
+              <div class="satisfactorio">
+                <input name="valor-comodidad" type="radio" value="satisfactorio" class="form-input" />
+              </div>
+              <div class="excelente">
+                <input name="valor-comodidad" type="radio" value="excelente" class="form-input" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="servicio">
+                <label class="form-label">Servicio al cuarto</label>
+              </div>
+              <div class="mejorable">
+                <input name="valor-servcuarto" type="radio" value="mejorable" class="form-input" />
+              </div>
+              <div class="satisfactorio">
+                <input name="valor-servcuarto" type="radio" value="satisfactorio" class="form-input" />
+              </div>
+              <div class="excelente">
+                <input name="valor-servcuarto" type="radio" value="excelente" class="form-input" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="servicio">
+                <label class="form-label">Precio</label>
+              </div>
+              <div class="mejorable">
+                <input name="valor-precio" type="radio" value="mejorable" class="form-input" />
+              </div>
+              <div class="satisfactorio">
+                <input name="valor-precio" type="radio" value="satisfactorio" class="form-input" />
+              </div>
+              <div class="excelente">
+                <input name="valor-precio" type="radio" value="excelente" class="form-input" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="servicio">
+                <label class="form-label">Seguridad</label>
+              </div>
+              <div class="mejorable">
+                <input name="valor-seguridad" type="radio" value="mejorable" class="form-input" />
+              </div>
+              <div class="satisfactorio">
+                <input name="valor-seguridad" type="radio" value="satisfactorio" class="form-input" />
+              </div>
+              <div class="excelente">
+                <input name="valor-seguridad" type="radio" value="excelente" class="form-input" />
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <p>Principal motivo para elegir Indira Hotel Boutique</p>
+            <label class="form-label">
+              <input type="checkbox" value="opiniones" class="form-input"/>
+              Opiniones de internet
+            </label>
+            <label class="form-label">
+              <input type="checkbox" value="recomendaciones" class="form-input" />
+              Recomendaciones
+            </label>
+            <label class="form-label">
+              <input type="checkbox" value="calidad" class="form-input" />
+              Calidad del servicio
+            </label>
+            <label class="form-label">
+              <input type="checkbox" value="precio" class="form-input" />
+              Precio
+            </label>
+            <label class="form-label">
+              <input type="checkbox" value="disponibilidad" class="form-input" />
+              Disponibilidad
+            </label>
+            <label class="form-label">
+              <input type="checkbox" value="ubicacion" class="form-input" />
+              Ubicación
+            </label>
+          </div>
+
+          <div class="form-group">
+            <p>Agregar sugerencias y comentarios</p>
+            <textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="Escriba lo que desee aquí"></textarea>
+          </div>
+
+          <div class="form-group buttonsub">
+            <button id="submit" type="submit">Enviar</button>
+          </div>
+        </form>
+      </main>
+    </div>
+    <footer>
+      Realizado por <a href="https://github.com/jc-projects/" target="_blank">JC-PROJECTS</a> para <a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a>
+    </footer>
+  </body>
+</html>
