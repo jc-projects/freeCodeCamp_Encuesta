@@ -24,6 +24,7 @@
     <li><a href="#ir-arriba">Título y descripción del proyecto</a></li>
     <li><a href="#indice">Índice</a></li>
     <li><a href="#tecnologias">Tecnologías utilizadas</a></li>
+    <li><a href="#instalacion">Instalación</a></li>
     <li><a href="#historias-de-usuario">Historias de usuario</a></li>
     <li><a href="#pruebas">Pruebas</a></li>
     <li><a href="#desarrollado">Desarrollado por...</a>
@@ -46,10 +47,19 @@
     </a>
    </p>
   <p align="right">(<a href="#ir-arriba">Ir arriba</a>)</p>
+
+<!-- INSTALACIÓN -->
+  <a name="instalacion"></a>
+  ## 🔧 Instalación
+  Si deseas correr la web en un entorno local debes tener en cuenta lo siguiente: 
+  1. Clona el repositorio utilizando GIT o descargando el archivo ZIP:
+
+      `git clone https://github.com/joana-coll/Indira-Hotel-Boutique.git`
+  <p align="right">(<a href="#ir-arriba">Ir arriba</a>)</p>
   
 <!-- HISTORIAS DE USUARIO -->
   <a name="historias-de-usuario"></a>
-  ## 🔧 Historias de usuario
+  ## 🚀 Historias de usuario
   1. Debes tener un título de página en un elemento `h1` con un `id` de `title`
   2. Debes tener una corta explicación en el elemento `p` con un `id` de `description`
   3. Debes tener un elemento `form` con un `id` de `survey-form`
